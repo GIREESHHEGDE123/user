@@ -1,0 +1,259 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url(https://img.freepik.com/premium-vector/hexagonal-geometric-background-with-wave-line-hexagon-genetic-social-network_618588-603.jpg?semt=ais_hybrid);
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 50%;
+  max-width: 800px;
+  margin: 15% auto;
+
+  background: #fff;
+  box-shadow: 0 0 5px 15px rgba(249, 248, 248, 0.3);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #a0ef6ef5;
+  margin-bottom: 20px;
+}
+
+button {
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6ed2d9;
+}
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+a {
+  text-decoration: none;
+}
+
+a button {
+  margin-top: 15px;
+}
+
+.main {
+  margin-top: 10%;
+  margin-bottom: 20%;
+  color: #007bff;
+  font-size: 20px;
+}
+.home {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+  max-width: 600px;
+  height: 200px;
+  margin-left: 28.5%;
+  margin-top: 3%;
+}
+.form {
+  margin-top: 80px;
+}
+.api {
+  margin-top: 80px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin-left: 35%;
+  border: 2px solid rgb(4, 250, 250);
+  border-radius: 3%;
+  color: rgb(247, 161, 91);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+input,
+textarea,
+select {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}
+
+.submit_details {
+  border: 2px solid lightslategray;
+  border-radius: 5px;
+  margin-left: 35%;
+  max-width: 400px;
+  text-align: center;
+  background-color: #efefef;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+  }
+
+  .container {
+    width: 90%;
+    margin: 10% auto;
+    box-shadow: 0 0 5px 10px rgba(249, 248, 248, 0.3);
+    border-radius: 8px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+    max-width: 80%;
+    margin: 5% auto;
+  }
+
+  .form,
+  .api {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 20px auto;
+    gap: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 40px;
+  }
+
+  form div {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .info {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 30px;
+    padding: 8px;
+    margin-left: 0;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  .submit_details {
+    border-radius: 8px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .card-left {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-right {
+    padding: 15px;
+  }
+
+  .info-group {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .submit_details p {
+    font-size: 30px;
+  }
+}
